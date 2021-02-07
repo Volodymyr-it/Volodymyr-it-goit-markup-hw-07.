@@ -269,7 +269,8 @@ footer address {
   height: 86px;
   margin-top: 72px;
   justify-content: center;
-  margin-left: 93px;
+  margin-left: auto;
+  margin-right: 0;
 }
 .footer-subscraibe {
   font-weight: 700;
@@ -796,8 +797,8 @@ footer address {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  min-width: 528px;
+
   margin-left: auto;
   margin-right: auto;
   padding: 40px;
@@ -829,9 +830,7 @@ footer address {
 .button-close svg:focus {
   fill: var(--accent-color);
 }
-.form {
-  width: 528px;
-}
+
 .form h2 {
   width: 448px;
   font-weight: 700;
@@ -844,17 +843,22 @@ footer address {
 }
 .form-field {
   position: relative;
-  display: flex;
-
   flex-direction: column;
   margin-bottom: 10px;
 }
 
 .name-label {
-  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2px;
+  letter-spacing: 0.01em;
 }
-.input-container {
+
+.input-container,
+.textarea {
+  display: block;
   position: relative;
+  margin-top: 4px;
 }
 .input-img {
   position: absolute;
@@ -872,6 +876,8 @@ footer address {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
+.textarea:hover,
+.textarea:focus,
 .form-field input:hover,
 .form-field input:focus {
   border-color: var(--accent-color);
@@ -886,24 +892,29 @@ footer address {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
+
 .textarea {
   height: 120px;
   width: 448px;
-  resize: none;
   padding: 12px 16px;
+  resize: none;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   font-weight: 400;
   font-size: 12px;
   line-height: 1.2;
   letter-spacing: 0.01em;
-
   color: rgba(117, 117, 117, 0.5);
 }
+
 .old-checkbox:checked ~ .checkbox-icon {
   background-color: var(--accent-color);
   background-origin: border-box;
   border-color: var(--accent-color);
+}
+
+.button-form-submit:focus {
+  background-color: var(--accent-color);
 }
 .old-checkbox {
   position: absolute;
@@ -926,6 +937,9 @@ footer address {
   border-radius: 2px;
   cursor: pointer;
   fill: var(--primary-white-color);
+}
+.old-checkbox:checked ~ .checkbox-icon:focus {
+  fill: var(--accent-color);
 }
 
 .text {
