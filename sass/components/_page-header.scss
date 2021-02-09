@@ -2,18 +2,6 @@
 .header {
   background-color: $primary-white-color;
 }
-/*header logo */
-.studio {
-  color: $title-text-color;
-  font-family: Raleway, sans-serif;
-}
-.logo {
-  color: $accent-color;
-  font-family: Raleway, sans-serif;
-  font-size: 26px;
-  line-height: 1.2;
-  margin-right: 93px;
-}
 
 .header-nav,
 .header-links,
@@ -42,7 +30,7 @@
   border-radius: 2px;
   height: 4px;
   opacity: 0;
-  transition: opacity $animation-duration $nimation-type;
+  transition: opacity $animation-duration $animation-type;
   background-color: $accent-color;
 }
 .curent-link .header-link::after,
