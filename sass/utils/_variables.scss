@@ -1,9 +1,3 @@
-* {
-  //fonts
-  list-style: none;
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-}
 /* #ffffff; основний білий колір*/
 /* #E5E5E5; білий колір фону*/
 /* #F5F4FA; темніший білий вторинний колір фону */
@@ -13,57 +7,20 @@
 /* #2196F3; блакитний колір акцетів*/
 
 :root {
-  --primary-white-color: #ffffff;
-  --main-background-color: #e5e5e5;
-  --second-background-color: #f5f4fa;
-  --dark-background-color: #2f303a;
+  $primary-white-color: #ffffff;
+  $main-background-color: #e5e5e5;
+  $second-background-color: #f5f4fa;
+  $dark-background-color: #2f303a;
 
-  --accent-color: #2196f3;
+  $accent-color: #2196f3;
 
-  --main-text-color: #757575;
-  --title-text-color: #212121;
-  --footer-tel-color: rgba(255, 255, 255, 0.6);
+  $main-text-color: #757575;
+  $title-text-color: #212121;
+  $footer-tel-color: rgba(255, 255, 255, 0.6);
 
-  --animation-duration: 250ms;
-  --animation-type: linear;
-}
-/* common */
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 15px;
-}
-h1,
-h2,
-h3,
-p,
-ul {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-a {
-  text-decoration: none;
-  list-style: none;
-}
-body {
-  font-family: Roboto, sans-serif;
-  color: var(--main-text-color);
-}
-.order-button {
-  cursor: pointer;
-  border-radius: 4px;
-}
-.invisible {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  $animation-duration: 250ms;
+  $animation-type: linear;
+
+  $main-font-family: "Roboto" sans-serif;
+  $secondary-font-family: "Raleway", sans-serif;
 }
