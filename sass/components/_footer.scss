@@ -15,10 +15,11 @@ footer {
   color: $accent-color;
   font-family: Raleway, sans-serif;
   display: inline-block;
-}
-.logo-color {
-  color: $primary-white-color;
-  font-family: Raleway, sans-serif;
+
+  &-color {
+    color: $primary-white-color;
+    font-family: Raleway, sans-serif;
+  }
 }
 
 .footer-fedback a {
@@ -42,16 +43,17 @@ footer address {
 .social-container {
   margin-left: 70px;
   margin-top: 72px;
+  & h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $primary-white-color;
+    letter-spacing: 0.03em;
+  }
 }
-.social-container h3 {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $primary-white-color;
-  letter-spacing: 0.03em;
-}
+
 .footer-socials {
   display: flex;
   flex-wrap: wrap;
@@ -112,43 +114,36 @@ footer address {
   border-radius: 4px;
   padding-left: 16px;
 }
-.button-footer-submit {
-  padding-left: 25px;
-  padding-right: 10px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1, 8;
-  display: flex;
-  letter-spacing: 0.06em;
-  top: 50%;
-}
-
 .form-footer {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   width: 570px;
   padding-top: 20px;
-}
-.button-footer-submit {
-  position: relative;
-  align-items: center;
-  width: 200px;
-  height: 50px;
-  padding-top: 5px;
-  margin-left: 12px;
-  letter-spacing: 0.06em;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.8;
-  border: 0;
 
-  background-color: $accent-color;
-  color: $primary-white-color;
-  fill: $primary-white-color;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
+  &__submit {
+    display: flex;
+    padding-left: 25px;
+    padding-right: 10px;
+    padding-top: 5px;
+    margin-left: 12px;
+
+    top: 50%;
+    position: relative;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    border: 0;
+    background-color: $accent-color;
+    color: $primary-white-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+
 
 .footer-input-img {
   position: absolute;
@@ -156,7 +151,4 @@ footer address {
   top: 50%;
   transform: translateY(-50%);
   fill: $primary-white-color;
-}
-.footer-label .button-form-submit {
-  margin-left: 12px;
 }

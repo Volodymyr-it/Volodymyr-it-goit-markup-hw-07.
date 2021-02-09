@@ -554,7 +554,7 @@ body {
   border-radius: 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  background-color: var(--primary-white-color);
+  background-color: #ffffff;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -769,7 +769,7 @@ footer {
   display: inline-block;
 }
 
-.logo-color {
+.logo-footer-color {
   color: #ffffff;
   font-family: Raleway, sans-serif;
 }
@@ -891,19 +891,6 @@ footer address {
   padding-left: 16px;
 }
 
-.button-footer-submit {
-  padding-left: 25px;
-  padding-right: 10px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1, 8;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  letter-spacing: 0.06em;
-  top: 50%;
-}
-
 .form-footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -917,15 +904,21 @@ footer address {
   padding-top: 20px;
 }
 
-.button-footer-submit {
+.form-footer__submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 25px;
+  padding-right: 10px;
+  padding-top: 5px;
+  margin-left: 12px;
+  top: 50%;
   position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 200px;
   height: 50px;
-  padding-top: 5px;
-  margin-left: 12px;
   letter-spacing: 0.06em;
   font-weight: 700;
   font-size: 16px;
@@ -933,7 +926,6 @@ footer address {
   border: 0;
   background-color: #2196f3;
   color: #ffffff;
-  fill: #ffffff;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
