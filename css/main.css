@@ -1109,14 +1109,15 @@ footer address {
 .team-images {
   background-color: #f5f4fa;
   padding: 94px 0;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 
 .team-images h2 {
   color: #212121;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -1124,17 +1125,11 @@ footer address {
 .team-images h3 {
   color: #212121;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
   margin-top: 30px;
 }
 
 .team-images p {
   color: #757575;
-  font-size: 16px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
 }
 
 .team-units {
@@ -1147,7 +1142,7 @@ footer address {
   margin-left: 30px;
 }
 
-.team-item {
+.team-units .team-item {
   text-align: center;
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
@@ -1211,6 +1206,22 @@ footer address {
 }
 
 /* Постійні клієнти */
+.regular-customers {
+  color: #212121;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.regular-customers h2 {
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
 .customers {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1228,6 +1239,7 @@ footer address {
 }
 
 .logotyp {
+  position: relative;
   display: inline-block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1244,50 +1256,17 @@ footer address {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.logo-1 {
-  padding: 20px 63px;
+.logotyp__icons {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
 }
 
-.logo-2 {
-  padding: 19px 65px;
-}
-
-.logo-3 {
-  padding: 24px 64px;
-}
-
-.logo-4 {
-  padding: 24px 45px;
-}
-
-.logo-5 {
-  padding: 22px 55px;
-}
-
-.logo-6 {
-  padding: 22px 40px;
-}
-
-.logotyp:hover,
-.logotyp:focus {
+.logotyp:hover, .logotyp:focus {
   fill: #2196f3;
   border: 1px solid #2196f3;
-}
-
-.regular-customers {
-  color: #212121;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  text-align: center;
-  padding-bottom: 94px;
-  padding-top: 94px;
-}
-
-.regular-customers h2 {
-  margin-bottom: 50px;
-  font-weight: 600;
 }
 
 .filter-butons {

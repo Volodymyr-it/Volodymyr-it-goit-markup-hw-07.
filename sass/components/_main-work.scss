@@ -1,17 +1,18 @@
 /* work */
 .main-images {
   padding-bottom: 94px;
-}
-.main-images h2 {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
 
-  color: $title-text-color;
+  & h2 {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+  }
 }
+
 .work-images .item + .item {
   margin-left: 30px;
 }
