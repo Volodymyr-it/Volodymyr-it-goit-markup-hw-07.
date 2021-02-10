@@ -1,23 +1,24 @@
 /*header logo */
-.studio {
-  color: $title-text-color;
-}
+
 .logo {
   margin-right: 93px;
+  &-footer {
+    margin-bottom: 20px;
+    margin-top: 60px;
+    display: inline-block;
+  }
+  &-color {
+    color: $primary-white-color;
+  }
+  &-font {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: $accent-color;
+    font-family: Raleway, sans-serif;
+  }
+  .studio {
+    color: $title-text-color;
+  }
 }
 /* footer logo */
-.logo-footer {
-  margin-bottom: 20px;
-  margin-top: 60px;
-  display: inline-block;
-}
-.logo-color {
-  color: $primary-white-color;
-}
-.logo-font {
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  color: $accent-color;
-  font-family: Raleway, sans-serif;
-}

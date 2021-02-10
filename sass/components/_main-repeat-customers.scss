@@ -53,12 +53,9 @@
   text-align: center;
   padding-bottom: 94px;
   padding-top: 94px;
-}
-.regular-customers h2 {
-  margin-bottom: 50px;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.03em;
+
+  & h2 {
+    margin-bottom: 50px;
+    font-weight: 600;
+  }
 }

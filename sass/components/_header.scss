@@ -19,20 +19,21 @@
 .header-link {
   position: relative;
   padding: 32px 0;
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 2px;
+    height: 4px;
+    opacity: 0;
+    transition: opacity $animation-duration $animation-type;
+    background-color: $accent-color;
+  }
 }
-.header-link::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  border-radius: 2px;
-  height: 4px;
-  opacity: 0;
-  transition: opacity $animation-duration $animation-type;
-  background-color: $accent-color;
-}
+
 .curent-link .header-link::after,
 .header-link:focus::after,
 .header-link:hover::after {
